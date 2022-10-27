@@ -9,13 +9,19 @@
     <link rel="icon" href="img/gorra01.png">
     <link rel="stylesheet" href="css/style.css">
 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>bzrp | Biografía</title>
 </head>
 
 <body>
     <!-- ------------------------------- navbar -------------------------------- -->
 
-    <nav class="navBar">
+    <nav class="navBar animate__animated animate__heartBeat">
 
         <a class="logoEnlace" href="index.html">
             <img src="img/gorra01.png" alt="gorrabzrp">
@@ -35,11 +41,11 @@
 
     <!-- ------------ sectionOne ------------ -->
     <article class="article_contenedor">
-        <div class="quinto_imagen">
+        <div class="quinto_imagen" data-aos="fade-down-right">
             <img src="img/LOGO_5to.jpg" alt="foto_quinto_escalon" class="quintoEscalon">
         </div>
 
-        <div class="quinto_desc">
+        <div class="quinto_desc" data-aos="fade-down-left">
             <h2 class="quinto_title">Sus inicios</h2>
             <p class="quinto_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium
                 repudiandae inventore eaque cum ea quam impedit exercitationem at. Repellendus suscipit enim nesciunt
@@ -52,7 +58,7 @@
     <!-- ------------ sectionTwo ------------ -->
     <article class="article_combos">
 
-        <div class="combos_desc">
+        <div class="combos_desc" data-aos="zoom-in-right">
             <h2 class="combos_title">Videos de YouTube</h2>
             <p class="combos_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorem nam at facere
                 sequi numquam nemo rerum itaque porro? Alias, delectus voluptates commodi reiciendis esse, iure officiis
@@ -62,7 +68,7 @@
         </div>
 
 
-        <div class="combos_video">
+        <div class="combos_video" data-aos="zoom-in-left">
             <video src="video/comboloco.mp4" controls class="videoCombos"></video>
         </div>
     </article>
@@ -86,7 +92,11 @@
     </footer>
 
 
-
+    <!--scripts animaciones-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 

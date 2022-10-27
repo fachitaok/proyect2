@@ -8,6 +8,11 @@
 
     <link rel="icon" href="img/gorra01.png">
     <link rel="stylesheet" href="css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>bzrp | Inicio</title>
 </head>
@@ -15,7 +20,7 @@
 <body>
     <!-- ------------------------------- navbar -------------------------------- -->
 
-    <nav class="navBar">
+    <nav class="navBar animate__animated animate__heartBeat">
         
             <a class="logoEnlace" href="index.html">
                 <img src="img/gorra01.png" alt="gorrabzrp">
@@ -35,26 +40,26 @@
     <!-- ------------------------------ secciones ------------------------------ -->
 <main>
     <section class="section_one">
-        <div class="section_text">
+        <div class="section_text animate__animated animate__backInLeft">
             <h2 class="section_h2">¿QUIEN ES BIZARRAP?</h2>
             <p class="section_p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum cum possimus accusantium molestiae
                 qui quibusdam quo, ea in quasi quaerat totam similique consectetur quod pariatur, libero adipisci,
                 officiis iusto voluptate.</p>
         </div>
 
-        <div class="section_img">
+        <div class="section_img animate__animated animate__backInRight">
             <img src="img/bzrppng.png" alt="bzrp">
         </div>
     </section>
 
 
-    <section class="sectionTwo_contenedor" >
+    <section class="sectionTwo_contenedor"  >
 
-        <div class="sectionTwo_video">
+        <div class="sectionTwo_video" data-aos="fade-down">
             <video src="video/lgante session.mp4" controls class="videolgante" ></video>
         </div>
 
-        <div class="sectionTwo_desc" >
+        <div class="sectionTwo_desc" data-aos="flip-right">
 
             <h2 class="sectionTwo_desc_h2" >Descripcion</h2>
             <p class="sectionTwo_desc_p" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nihil molestiae ab velit enim corrupti
@@ -84,7 +89,11 @@
     </footer>
 
 
-
+    <!--scripts animaciones-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

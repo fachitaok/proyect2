@@ -9,13 +9,19 @@
     <link rel="icon" href="img/gorra01.png">
     <link rel="stylesheet" href="css/style.css">
 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>bzrp | Sessions</title>
 </head>
 
 <body>
     <!-- ------------------------------- navbar -------------------------------- -->
 
-    <nav class="navBar">
+    <nav class="navBar animate__animated animate__heartBeat">
         
         <a class="logoEnlace" href="index.html">
             <img src="img/gorra01.png" alt="gorrabzrp">
@@ -34,7 +40,7 @@
     <!-- ------------ sectionOne ------------ -->
 
     <section class="contenedor_padre">
-        <div class="contenedor_info">
+        <div class="contenedor_info" data-aos="fade-right">
             <h2 class="contenedor_h2">Session mas vista</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eveniet 
                 culpa sapiente nemo. Possimus
@@ -43,7 +49,7 @@
                 natus.</p>
         </div>
         
-        <div class="contenedor_imgNaty">
+        <div class="contenedor_imgNaty" data-aos="fade-left">
             <img src="img/natypeluso.jpg" alt="BzrpNatyPeluso">
         </div>
 
@@ -54,7 +60,7 @@
 
     <article class="article_padre">
 
-        <section class="section_multi">
+        <section class="section_multi" data-aos="flip-up">
             <div class="foto_trueno"> 
                 <img src="img/trueno.jpg" alt="truenoBzrp" class="fotoTrueno">
             </div>
@@ -65,7 +71,7 @@
         </section>
 
 
-        <div class="info_trueno">
+        <div class="info_trueno"  data-aos="flip-down">
             <h2 class="info_titulo">Freestyle mas visto</h2>
             <p class="info_desc">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam perferendis amet enim numquam tenetur velit quia ducimus rerum tempore. Velit tenetur omnis adipisci quasi incidunt expedita distinctio soluta voluptates minima? Enim dolores vel, officia culpa ad non quae. Nemo, aspernatur!
@@ -92,7 +98,11 @@
         </div>
     </footer>
 
-
+    <!--scripts animaciones-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script> 
 </body>
 
 </html>
